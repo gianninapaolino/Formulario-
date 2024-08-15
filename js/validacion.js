@@ -10,11 +10,11 @@ function showAlertError() {
 }
 
 function TodosLosCamposCompletos() {
-    if (nombre.value === "" || apellido.value === "" || email.value === "" || password1.value === "" || password2.value === "") {
-        return false; 
+    if (nombre.value !== "" || apellido.value !== "" || email.value !== "" || password1.value !== "" || password2.value !== "") {
+        return true; 
     }
         else {
-        return true;
+        return false;
     }
     } 
 
@@ -22,12 +22,12 @@ function TodosLosCamposCompletos() {
 let terminos = document.getElementById("terminos").checked;
 
 function lucia() {
- if (!terminos) {
-return false;
+ if (terminos) {
+return true;
  
 } 
  else {
- return true;
+ return false;
         }
     }
 
@@ -49,7 +49,8 @@ const email = document.getElementById('email').value;
 const password1 = document.getElementById('password1').value;
 const password2 = document.getElementById('password2').value;
 const terminos = document.getElementById('terminos').checked;
-   if ( checkPassword() && TodosLosCamposCompletos() && lucia()) { showAlertSuccess()} 
+   if ( checkPassword() && TodosLosCamposCompletos() && lucia()) 
+   { showAlertSuccess()} 
    else {
        showAlertError()}
     
