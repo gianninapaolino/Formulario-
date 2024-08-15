@@ -30,6 +30,7 @@ showAlertError('Debe aceptar los términos y condiciones del servicio.');
 
 }
 
+
 function checkPassword() {
     if (password1.value.length >= 6 && password2.value.length >= 6 && password1.value === password2.value) {
     return showAlertSuccess();
