@@ -10,7 +10,7 @@ let passw2 = document.getElementById("password2")
 
 function mensajeAceptar() {
 
-if (passw1 === passw2) { 
+if (passw1.value === passw2.value) { 
    console.log (showAlertSuccess());
 }
   else  {
@@ -18,3 +18,8 @@ if (passw1 === passw2) {
      console.log (showAlertError());
  }
 }
+
+let enviar = document.getElementById("regBtn")
+enviar.addEventListener("click", function (){
+    mensajeAceptar()
+})
