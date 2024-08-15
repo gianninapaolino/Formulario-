@@ -4,8 +4,7 @@ function showAlertSuccess() {
 
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
 
 function TodosLosCamposCompletos() {
@@ -19,8 +18,7 @@ let enviar = document.getElementById('regBtn');
 enviar.addEventListener("click", function() {
           TodosLosCamposCompletos();
        });
-=======
-=======
+
 }
 
 const nombre = document.getElementById('nombre').value;
@@ -44,7 +42,7 @@ showAlertError('Debe aceptar los términos y condiciones del servicio.');
   showAlertSuccess();
         }
     });
->>>>>>> afa462df0595bd03d8e2492b47f573ce74c2dc3b
+
 
 }
 
@@ -59,10 +57,9 @@ else {
   }
 }     
 
-<<<<<<< HEAD
+
 send2.addEventListener("click", function() {
  checkPassword();
 });
->>>>>>> 97422d8a7b2d9f8bbbfdf305e87920bf025796a2
-=======
->>>>>>> afa462df0595bd03d8e2492b47f573ce74c2dc3b
+
+
