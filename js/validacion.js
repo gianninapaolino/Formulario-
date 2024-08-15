@@ -15,5 +15,3 @@ document.getElementById('regBtn').addEventListener('click', function() {
     const terminos = document.getElementById('terminos').checked;
 
 
-let isValid = true;
-
