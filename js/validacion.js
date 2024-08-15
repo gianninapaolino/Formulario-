@@ -16,35 +16,39 @@ function showAlertError() {
 
 function TodosLosCamposCompletos() {
     if (nombre.value === "" || apellido.value === "" || email.value === "" || password1.value === "" || password2.value === "") {
-        return showAlertError(); {
+        return showAlertError(); 
+    }
+        else {
         return showAlertSuccess();
     }
     } 
 
-let enviar = document.getElementById('regBtn');
+let enviar1 = document.getElementById('regBtn');
+enviar1.addEventListener("click", function() {
+          TodosLosCamposCompletos()
+       })
+
+
+
+
+let enviar = document.getElementById("termino");
 enviar.addEventListener("click", function() {
-          TodosLosCamposCompletos();
-       });
-
-}
-
-
-let enviar = document.getElementById("regBtn");
-enviar.addEventListener("click", function(event) {
+    lucia() })
   
 let terminos = document.getElementById("terminos").checked;
 
+function lucia() {
  if (!terminos) {
-showAlertError('Debe aceptar los términos y condiciones del servicio.');
- event.preventDefault(); 
+return showAlertError();
+ 
 } 
  else {
-  showAlertSuccess();
+ return showAlertSuccess();
         }
-    });
+    }
 
 
-}
+
 
 
 function checkPassword() {
