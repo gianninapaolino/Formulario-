@@ -19,7 +19,7 @@ function TodosLosCamposCompletos() {
     } 
 
   
-let terminos = document.getElementById("terminos").checked;
+
 
 function lucia() {
  if (terminos) {
