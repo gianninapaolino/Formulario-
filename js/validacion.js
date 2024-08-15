@@ -8,7 +8,7 @@ function showAlertError() {
 }
 
 function checkPassword() {
-    if (password1.length >= 6 && password2.length >= 6) {
+    if (password1.value.length >= 6 && password2.value.length >= 6) {
     return showAlertSuccess();
 } 
 else {
@@ -16,4 +16,8 @@ else {
 
   }
 }     
+let send2 = document.getElementById('regBtn');
 
+send2.addEventListener("click", function() {
+ checkPassword();
+});
