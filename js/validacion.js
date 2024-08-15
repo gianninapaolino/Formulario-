@@ -17,5 +17,3 @@ document.getElementById('regBtn').addEventListener('click', function() {
 
 let isValid = true;
 
-if (!nombre || !apellido || !email || !password1 || !password2) {
-        isValid = false;
