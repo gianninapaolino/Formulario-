@@ -20,16 +20,10 @@ function TodosLosCamposCompletos() {
 
   
 
-
-function lucia() {
- if (terminos) {
-return true;
- 
-} 
- else {
- return false;
-        }
-    }
+function terminosAceptados() {
+  const terminos = document.getElementById("terminos").checked;
+  return terminos;
+}
 
 function checkPassword() {
     if (password1.value.length >= 6 && password2.value.length >= 6 && password1.value === password2.value) {
