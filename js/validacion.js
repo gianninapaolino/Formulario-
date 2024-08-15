@@ -56,7 +56,7 @@ else {
 
   }
 }     
-
+let send2 = document.getElementById('regBtn');
 
 send2.addEventListener("click", function() {
  checkPassword();
