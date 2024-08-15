@@ -10,7 +10,7 @@ function showAlertError() {
 }
 
 function TodosLosCamposCompletos() {
-    if (nombre.value !== "" || apellido.value !== "" || email.value !== "" || password1.value !== "" || password2.value !== "") {
+    if (nombre.value !== "" && apellido.value !== "" && email.value !== "" && password1.value !== "" && password2.value !== "") {
         return true; 
     }
         else {
