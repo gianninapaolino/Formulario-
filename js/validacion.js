@@ -30,3 +30,15 @@ document.getElementById("regBtn").addEventListener("click", function () {
         showAlertError();
     }
 });
+
+function showAlertSuccess() {
+    const alertSuccess = document.getElementById("alert-success");
+    alertSuccess.classList.add("show");
+    alertSuccess.classList.remove("fade");
+}
+
+function showAlertError() {
+    const alertError = document.getElementById("alert-danger");
+    alertError.classList.add("show");
+    alertError.classList.remove("fade");
+}
