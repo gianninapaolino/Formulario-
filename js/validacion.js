@@ -6,30 +6,20 @@ document.getElementById("regBtn").addEventListener("click", function () {
     const password2 = document.getElementById('password2').value;
     const terminos = document.getElementById('terminos').checked;
 
-    let isValid = true;
 
-    if (!nombre || !apellido || !email || !password1 || !password2) {
-        isValid = false;
-    }
-
-    if (password1.length < 6) {
-        isValid = false;
-    }
-
-    if (password1 !== password2) {
-        isValid = false;
-    }
-
-    if (!terminos) {
-        isValid = false;
-    }
-
-    if (isValid) {
-        showAlertSuccess();
-    } else {
+    if (nombre === '' || apellido === '' || email === '' || password1 === '' || password2 === '') {
         showAlertError();
+    } else if (password1.length < 6) {
+        showAlertError();
+    } else if (password1 !== password2) {
+        showAlertError();
+    } else if (!terminos) {
+        showAlertError();
+    } else {
+        showAlertSuccess();
     }
 });
+    
 
 function showAlertSuccess() {
     const alertSuccess = document.getElementById("alert-success");
